@@ -1,0 +1,138 @@
+137 lines (135 sloc)  7.03 KB
+<!doctype HTML>
+<html>
+<title>Form Design</title>
+<head>
+	<center>Republic of The Philippines</center>
+	<center><b>UNIFIED MULTIPURPOSE ID (UMID) CARD</b></center>
+	<center><b>APPLICATION FORM</b></center>
+	<fieldset><center><b>THIS FORM IS NOT FOR SALE AND CAN BE REPRODUCED</b></center></fieldset>
+</head>
+<form action = "#.php" name="frmDesign" method="get">
+
+<header><center><b>Part I: Name</b></center></header>
+		<fieldset>
+			Name: <input type= "text" name="lstName" placeholder ="Last Name">
+				  <input type= "text" name="frtName" placeholder ="First Name">
+				  <input type= "text" name="mdlName" placeholder ="Middle Name">
+				  <input type= "text" name="suffix" placeholder ="Suffix"><br><p></p>
+			Maiden Name: <input type= "text" name="lstName" placeholder ="Last Name">
+						 <input type= "text" name="frtName" placeholder ="First Name">
+						 <input type= "text" name="mdlName" placeholder ="Middle Name">
+						 <input type= "text" name="suffix" placeholder ="Suffix"> (if married female)
+		</fieldset>
+		<header><center><b>Part II: Facts of Birth</b></center></header>
+		<fieldset>
+				Date of Birth: <input type= "date"><p></p> 
+				Place of Birth: <input type= "text" name="plcBirth" placeholder ="City/Municipality">
+								<input type= "text" name="plcBirth" placeholder ="Province/State">
+								<input type= "text" name="plcBirth" placeholder ="Country, if born outside the Philippines"><br> <p></p>
+				 Sex: Male<input type="radio" name="sex" value= "male">
+					Female<input type="radio" name="sex" value= "female"><br> <p></p>
+				Father's Name: <input type= "text" name="lstName" placeholder ="Last Name">
+							   <input type= "text" name="frtName" placeholder ="First Name">
+							   <input type= "text" name="mdlName" placeholder ="Middle Name">
+							   <input type= "text" name="suffix" placeholder ="Suffix"><br> <p></p>
+				Mother's Maiden Name: <input type= "text" name="lstName" placeholder ="Last Name">
+							   <input type= "text" name="frtName" placeholder ="First Name">
+							   <input type= "text" name="mdlName" placeholder ="Middle Name">
+							   <input type= "text" name="suffix" placeholder ="Suffix">	 
+		</fieldset>
+		<header><center><b>Part III: Demographic Data</b></center<></header>
+		<fieldset>
+			<input type= "text" name="hmeaddress" placeholder ="Home Address">
+			<input type= "text" name="bldgNo" placeholder ="RM/FLR/Unit No.& Bldg. No.">
+			<input type= "text" name="houseNo" placeholder ="House/Lot & Blk. No.">
+			<input type= "text" name="strtNo" placeholder ="Street Name">
+			<input type= "text" name="subdiv" placeholder ="Subdivision">
+			<input type= "text" name="brgy" placeholder ="Barangay/District"> <p></p>
+			City/Municipality:
+				<select name="City">
+				<option selected value = "choose">Choose a City</option>
+				<option value = "Quezon">Quezon</option>
+				<option value = "Makati">Makati</option>
+				<option value = "Mandaluyong">Mandaluyong</option>
+				<option value = "Pasig">Pasig</option>
+				<option value = "Taguig">Taguig</option>
+				<option value = "Manila">Manila</option>
+				<option value = "Caloocan">Caloocan</option>
+				<option value = "Pasay">Pasay</option>
+				<option value = "Las-Piñas">Las Pinas</option>
+				<option value = "Parañaque">Paranaque</option>
+				<option value = "Marikina">Marikina</option>
+				</select>
+			Province/State:
+				<select name="City">
+				<option selected value = "choose">Choose a state</option>
+				<option value = "Metro Manila">Metro Manila</option>
+				<option value = "Abra">Abra</option>
+				<option value = "Makati">Albay</option>
+				<option value = "Apayao">Apayao</option>
+				<option value = "Aurora">Aurora</option>
+				<option value = "Bataan">Bataan</option>
+				<option value = "Batangas">Batangas</option>
+				<option value = "Benguet">Benguet</option>
+				<option value = "Bulacan">Bulacan</option>
+				</select>
+			</fieldset>
+			<fieldset>
+			Zip Code: <input type= "number" min = "0" max = "9">
+					  <input type= "number" min = "0" max = "9">
+					  <input type= "number" min = "0" max = "9">
+					  <input type= "number" min = "0" max = "9">
+			Country Code: <input type= "number" min = "0"><br> <p>           </p>
+
+			<fieldset>
+			Marital Status: Single <input type = "radio" name="status">
+							Married <input type = "radio" name="status">
+							Widowed <input type = "radio" name="status">
+							Divorce/Annuled <input type = "radio" name="status">
+							Legally Separated <input type = "radio" name="status"><br>
+			</fieldset>
+			<fieldset>
+			Tax Identification Number: <input type = "number" min = "0">
+			</fieldset>
+			<fieldset>
+			Height: <input type= "number" min = "0" placeholder="centimeters"> cm.
+			Weight: <input type= "number" min = "0" placeholder="kilograms"> kg. <p> </p>
+			Distinguishing Features: <input type= "text" name="features" >
+			</fieldset>
+			</fieldset>
+		<header><center><b>PART IV: STATEMENT OF CONSENT</b></center></header>
+			<fieldset>
+		<p style="text-align:justify;">I declare that I am fully aware that the above data shall be used for securing my Common Reference Number (CRN) for the United Multi-Purpose ID (UMID) System or updating my personal data in the CRN Registry. I trust that the above data shall remain confidential, hence, I give my consent that the same data be secured and accessed the subsequent validation, verification and other purpose consistent with the objectives of the UMID System under Executive Order No. (EO) 420 as amended by EO No. 700. I further affirm that all statements/data, which appear in this application form and made by me are true, correct and complete to the best of my knowledge and belief.</p><br>
+			<p>_______________<br>Printed Name:</p> 
+			<p>_______________<br>Signature:</p> 
+			Date: <input type = "date";>
+			</fieldset>
+		<header><center><b>PART V: OTHER ENROLEE DATA</b></center></header>
+		<fieldset>
+		SS Number: <input type="number" min = "0" max = "9">
+				   <input type="number" min = "0" max = "9">
+				   <input type="number" min = "0" max = "9">
+				   <input type="number" min = "0" max = "9">
+				   <input type="number" min = "0" max = "9">
+				   <input type="number" min = "0" max = "9">
+				   <input type="number" min = "0" max = "9">
+				   <input type="number" min = "0" max = "9">
+				   <input type="number" min = "0" max = "9">
+				   <input type="number" min = "0" max = "9"><br><p> </p>
+		Telephone Number:  <input type="number" min = "0"><br><p> </p>
+		Mobile/Cellphone Number:  <input type="number" min = "0"><br><p> </p>
+		E-mail Address: <input type = "text">
+		</fieldset>
+		<header><center><b>FOR SSS USE ONLY</b></center></header>
+		<fieldset>
+		Identification of Documents Presented: <input type= "text" name="documents">
+		Remarks: <input type= "text" name="remarks"><br> <p> </p>
+		Screened by:
+		<p>______________________<br>
+		Signature over printed name<br><p> </p>
+		Date and Time: <input type = "date"> <input type ="time"><p> </p>
+		Branch: <input type= "text" name="remarks"><br><p> </p>
+		Data Captured by: <input type="text">
+		Date and Time: <input type = "date"> <input type ="time">
+		</fieldset><br>
+		<input type = "reset" value = "Reset Form" name = "submit">	 
+</form>
+</html
